@@ -3,6 +3,10 @@ body {
     padding: 0;
 
     background: #F2F2F2;
+    font-family: Montserrat;
+}
+p {
+    margin: 0;
 }
 
 .main {
@@ -12,11 +16,87 @@ body {
 
 /*MAIN FIRST COLUMN*/
 .main-first-col {
-    max-width: 690px;
+    max-width: 33.333%;
+    margin-right: 23px;
+}
+.main-second-col {
+    max-width: 66.666%;
     margin-right: 23px;
 }
 
+
+/*BIO CONTAINER*/
 .bio-container { 
     background: #FFFFFF;
     border-radius: 12px;
+
+    padding: 23px;
+}
+.bio-container img {
+    max-width: 100%;
+
+    border-radius: 12px;
+}
+
+.fullname {
+    margin-top: 24px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #4F4F4F;
+}
+.profession {
+    margin-top: 6.5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #828282;
+}
+
+.email-container, 
+.telegram-container {
+    display: flex;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #4F4F4F;
+}
+.email-container svg, 
+.telegram-container svg {
+    margin-right: 18px;
+
+    width: 20px;    
+    height: auto;
+
+    fill: #4F4F4F;
+}
+.email-container {
+    margin-top: 32px;
+}
+.email-address a{
+    text-decoration: none;
+    color: #4F4F4F;
+}
+.telegram-container{
+    margin-top: 10.5px;
+}
+
+.about-me {
+    margin-top: 35.33px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #828282;
 }
