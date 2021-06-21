@@ -28,10 +28,44 @@ p {
 
     padding: 23px;
 }
-.bio-container img {
-    max-width: 100%;
+.main-img {
+    position: relative;
+}
+.main-img img {
+    display: block;
 
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 12px;
+}
+/*image overlay*/
+.main-img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+
+    transition: .3s ease;
+    opacity: 0;
+
+    cursor: pointer;
+    border-radius: 12px;
+
+    background: rgba(0, 0, 0, 0.6);
+}
+.main-img-overlay:hover {
+    opacity: 1;
+}
+.main-img-overlay .email-address a,
+.main-img-overlay .email-address a:hover{
+    color:#FFFFFF;
+}
+.main-img-overlay p {
+    margin-top: 50%;
 }
 
 .fullname {
@@ -74,6 +108,11 @@ p {
     height: auto;
 
     fill: #4F4F4F;
+}
+.email-address a:hover,
+.email-container svg:hover{
+    fill: #2F80ED;
+    color: #2F80ED;
 }
 .email-container {
     margin-top: 32px;
@@ -285,7 +324,6 @@ p {
     display: flex;
     margin-top: 16px;
     padding: 23px 18px;
-
 
     background: #FFFFFF;
     border-radius: 12px;

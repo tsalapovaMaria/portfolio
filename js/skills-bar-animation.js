@@ -6,7 +6,7 @@ skillProgress.className = 'skill-progress-tooltip';
 
 Array.from(skills).forEach(skill => {
     skill.addEventListener('mouseover', (event) => {
-        skillProgress.textContent = Math.round((skill.offsetWidth / maxProgressValue) * 100) + ' %';
+        skillProgress.textContent = Math.ceil((skill.offsetWidth / maxProgressValue) * 100) + ' %';
 
         skill.append(skillProgress);
         skillProgress.style.top = skill.offsetTop  - skillProgress.offsetTop + 'px';
