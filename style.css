@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #F2F2F2;
+}
+
+.main {
+    display: flex;
+    padding: 70px 65px;
+}
+
+/*MAIN FIRST COLUMN*/
+.main-first-col {
+    max-width: 690px;
+    margin-right: 23px;
+}
+
+.bio-container { 
+    background: #FFFFFF;
+    border-radius: 12px;
+}
