@@ -19,10 +19,6 @@ p {
     max-width: 33.333%;
     margin-right: 23px;
 }
-.main-second-col {
-    max-width: 66.666%;
-    margin-right: 23px;
-}
 
 
 /*BIO CONTAINER*/
@@ -160,4 +156,69 @@ p {
     line-height: 20px;
 
     color: #828282;
+}
+
+/*main second column*/
+
+.main-second-col {
+    width: 100%;
+    margin-right: 23px;
+}
+
+/*SKILLS*/
+
+.skills-container {
+    padding: 23px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.frontend-skills > p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    color: #4F4F4F;
+}
+.skills-bar-container {    
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.skills-bar-container + .skills-bar-container {
+    margin-top: 22px;
+}
+.skills-bar-container:first-of-type {
+    margin-top: 17px;
+}
+.skills-bar-container > p {
+    padding-right: 20px;
+    min-width: 110px;
+}
+.skills-bar {
+    position: relative;
+    width: 100%;
+    background: #C4C4C4;
+    border-radius: 12px;
+}
+.skills {
+    position: absolute;
+    height: 100%;
+    
+    background: #2F80ED;
+    border-radius: 12px;
+}
+.html {
+    width: 80%;
+}
+.css {
+    width: 75%;
+}
+.js {
+    width: 65%;
+}
+.react {
+    width: 50%;
 }
