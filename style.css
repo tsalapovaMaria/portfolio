@@ -97,16 +97,18 @@ p {
     color: #828282;
 }
 
-/*WORK EXPERIENCES*/
+/*WORK EXPERIENCES AND COURSES*/
 
-.experiences-container {
+.experiences-container,
+.courses-container {
     margin-top: 45px;
     padding: 17px 22px;
 
     background: #FFFFFF;
     border-radius: 12px;
 }
-.experience-title {
+.experience-title,
+.courses-title {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -114,22 +116,27 @@ p {
 
     color: #4F4F4F;
 }
-.experience {
+.experience,
+.course {
     margin-top: 44px;
     display: flex;
 }
-.experience:last-of-type {
+.experience:last-of-type,
+.course:last-of-type {
     margin-bottom: 36px;
 }
-.company-logo {    
+.company-logo,
+.course-logo {    
     margin-right: 16px;
     padding: 10px;
 }
-.experience .company-logo svg {
+.experience .company-logo svg,
+.course-logo img {
     width: 74px;
     height: 74px;
 }
-.experience-duration {
+.experience-duration,
+.course-duration {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -137,7 +144,8 @@ p {
     
     color: #828282;
 }
-.position {
+.position,
+.course-title {
     margin-top: 12px;
 
     font-style: normal;
@@ -147,7 +155,8 @@ p {
 
     color: #333333;
 }
-.experience-responsibilities {
+.experience-responsibilities,
+.course-about {
     margin-top: 33px;
 
     font-style: normal;
@@ -162,14 +171,12 @@ p {
 
 .main-second-col {
     width: 100%;
-    margin-right: 23px;
 }
 
 /*SKILLS*/
 
 .skills-container {
     padding: 23px;
-    width: 100%;
     background: #FFFFFF;
     border-radius: 12px;
 }
@@ -221,4 +228,136 @@ p {
 }
 .react {
     width: 50%;
+}
+
+/*Projects*/
+
+.projects-container {
+    width:100%;
+    margin-top: 46px;
+}
+.projects-count {
+    padding: 22px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #4F4F4F;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.projects-count svg {
+    width: 20px;
+
+    cursor: pointer;
+}
+.project {
+    display: flex;
+    margin-top: 16px;
+    padding: 23px 18px;
+
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.project + .project {
+    margin-top: 36px;
+}
+.project-first-col {
+    margin-right: 34px;
+}
+.project-first-col img {
+    max-width: 322px;
+    border-radius: 12px;
+}
+.project-sec-col {    
+    position: relative;
+}
+.project-hashtags span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #4F4F4F;
+}
+.project-hashtags span +span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #4F4F4F;
+}
+.project-title {
+    margin-top: 25px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #333333;
+}
+.project-description {
+    margin-top: 18px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #828282;
+}
+.project-description a {
+    color: #2F80ED;
+}
+.project-description a:hover {
+    color: #858585;
+}
+.buttons {
+    position:absolute;                 
+    bottom:0; 
+
+    margin-top: 51px;
+    display: flex;
+}
+.demo-button,
+.code-button {
+    width: 136.27px;
+    height: 46px;
+
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.demo-button{
+    margin-right: 12px;
+    background: #2F80ED;
+    
+    color: #FFFFFF;
+}
+.demo-button:hover {
+    background: #858585;
+}
+.code-button {
+    border: 1px solid #2F80ED;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    color: #2F80ED;
+}
+.code-button:hover {
+    background: #ddecff;
 }
