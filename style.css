@@ -100,3 +100,64 @@ p {
 
     color: #828282;
 }
+
+/*WORK EXPERIENCES*/
+
+.experiences-container {
+    margin-top: 45px;
+    padding: 17px 22px;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.experience-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #4F4F4F;
+}
+.experience {
+    margin-top: 44px;
+    display: flex;
+}
+.experience:last-of-type {
+    margin-bottom: 36px;
+}
+.company-logo {    
+    margin-right: 16px;
+    padding: 10px;
+}
+.experience .company-logo svg {
+    width: 74px;
+    height: 74px;
+}
+.experience-duration {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #828282;
+}
+.position {
+    margin-top: 12px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #333333;
+}
+.experience-responsibilities {
+    margin-top: 33px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #828282;
+}
