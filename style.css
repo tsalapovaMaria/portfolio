@@ -213,13 +213,23 @@ p {
 }
 
 /*SKILLS*/
-
 .skills-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.hard-skills-container,
+.soft-skills-container {
+    width: 50%;
     padding: 23px;
     background: #FFFFFF;
     border-radius: 12px;
 }
-.frontend-skills > p {
+.soft-skills-container {
+    margin-left: 30px;
+}
+.hard-skills > p, 
+.soft-skills > p {
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -228,63 +238,20 @@ p {
 
     color: #4F4F4F;
 }
-.skills-bar-container {    
-    margin-top: 17px;
-    display: flex;
-    justify-content: space-between;
-}
-.skills-bar-container + .skills-bar-container {
-    margin-top: 22px;
-}
-.skills-bar-container:first-of-type {
+.hard-skills > .checkbox-skills, 
+.soft-skills > .checkbox-skills {
     margin-top: 17px;
 }
-.skills-bar-container > p {
-    padding-right: 20px;
-    min-width: 110px;
+.skill + .skill {
+    margin-top: 7px;
 }
-.skills-bar {
-    position: relative;
-    width: 100%;
-    background: #C4C4C4;
-    border-radius: 12px;
+.skill input[type="checkbox"] {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
 }
-.skills {
-    position: absolute;
-    height: 100%;
-    
-    background: #2F80ED;
-    border-radius: 12px;
-}
-.skills:hover {
-    background: #65a8ff;
-}
-.html {
-    width: 80%;
-}
-.css {
-    width: 75%;
-}
-.js {
-    width: 65%;
-}
-.react {
-    width: 50%;
-}
+.skill input[type="checkbox"]:disabled {
 
-.skill-progress-tooltip {
-    position: absolute;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-
-    color: #FFFFFF;
-    cursor: default;
-
-    z-index: 2;
 }
 
 /*Projects*/
