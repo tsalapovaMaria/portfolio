@@ -212,8 +212,35 @@ p {
     width: 100%;
 }
 
+.status {    
+    padding: 23px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.status p:first-of-type {   
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    color: #4F4F4F;
+}
+.status p:last-of-type {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+
+    color: #4F4F4F;
+}
+
 /*SKILLS*/
 .skills-container {
+    margin-top: 15px;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -242,16 +269,27 @@ p {
 .soft-skills > .checkbox-skills {
     margin-top: 17px;
 }
+.skill {
+    display: flex;
+    align-items: center;
+}
 .skill + .skill {
     margin-top: 7px;
 }
-.skill input[type="checkbox"] {
+.skill svg {
     margin-right: 10px;
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
 }
-.skill input[type="checkbox"]:disabled {
+.skill:not(.achieved) svg {
+    stroke: #2F80ED;
+}
+.skill.achieved svg {
+    fill: #2F80ED;
+}
 
+.soft-skills .skill {
+    height: 25px;
 }
 
 /*Projects*/
@@ -275,6 +313,8 @@ p {
 
     background: #FFFFFF;
     border-radius: 12px;
+
+    cursor: pointer;
 }
 .projects-count svg {
     width: 20px;
